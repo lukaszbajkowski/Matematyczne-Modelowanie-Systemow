@@ -20,13 +20,7 @@ Repozytorium zawiera rozwiązania zadań laboratoryjnych z przedmiotu Matematycz
 git clone https://github.com/lukaszbajkowski/Matematyczne-Modelowanie-Systemow.git
 ```
 
-2. Przejdź do gałęzi odpowiadającej numerowi laboratorium, nad którym pracujesz.
-
-```bash
-cd lab-01
-```
-
-3. Znajdź plik README.md w danym folderze, aby uzyskać szczegółowe informacje dotyczące zadania i jego rozwiązania.
+2. Przejdź do gałęzi (branch) odpowiadającej numerowi laboratorium, nad którym pracujesz.
 
 ## Informacje dodatkowe
 
