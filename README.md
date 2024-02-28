@@ -26,8 +26,6 @@ git clone https://github.com/lukaszbajkowski/Matematyczne-Modelowanie-Systemow.g
 cd lab-01
 ```
 
-3. Znajdź plik README.md w danym folderze, aby uzyskać szczegółowe informacje dotyczące zadania i jego rozwiązania.
-
 ## Informacje dodatkowe
 
 - **Autor**: Łukasz Bajkowski
