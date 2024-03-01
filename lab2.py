@@ -24,23 +24,21 @@ def create_series(data, h, x01):
 
 def determine_cumulative(abundance):
     cumulative = [abundance[0]]
-    for i in range(1, len(abundance)):
-        cumulative.append(cumulative[i - 1] + abundance[i])
+    for items in range:
+        cumulative.append(cumulative[items - 1] + abundance[items])
     return cumulative
 
 
 '''
 ZADANIE 1
 '''
-excel_data = pd.read_excel(r'dane.xlsx',
-                           sheet_name='Dane')
+excel_data = pd.read_excel(r'dane.xlsx',sheet_name='Dane')
 data = pd.DataFrame(excel_data, columns=['Wiek', 'Wys', 'Masa'])
 select_data = data.loc[(data['Wiek'] < 13) & (data['Wiek'] >= 12)]
 final_data = select_data[['Wys', 'Masa']]
 final_data_no_weight = select_data[['Wys', 'Masa']]
 
-np.savetxt(r'dane.txt', final_data.values,
-           fmt='%1.2f')
+np.savetxt(r'dane.txt', final_data.values, fmt='%1.2f')
 
 dane_sz = []
 with open("dane.txt", 'r') as fi:
@@ -173,6 +171,7 @@ for i, (lower, upper) in enumerate(klasy_lundmana):
         upper = np.max(rohrer_coefficient)
     plt.axvspan(lower, upper, color='C{}'.format(i), alpha=0.3)
 
-plt.hist(rohrer_coefficient, bins=np.arange(min(rohrer_coefficient), max(rohrer_coefficient) + 0.05, 0.05), edgecolor='black', width=0.05)
+plt.hist(rohrer_coefficient, bins=np.arange(min(rohrer_coefficient), max(rohrer_coefficient) + 0.05, 0.05)
+         , edgecolor='black', width=0.05)
 plt.legend(['< 1.15', '1.15 - 1.25', '1.25 - 1.35', '1.35 - 1.45', '> 1.45'], loc='upper right')
 plt.show()
