@@ -14,15 +14,15 @@ select_data.loc[:, 'F_sr'] = select_data[['F_ram', 'F_łop', 'F_biod', 'F_gol']]
 final_data = select_data[['Masa', 'F_sr']]
 np.savetxt(r'dane.txt', final_data.values, fmt='%1.2f')
 
-dane_sz = []
+dane_fs = []
+dane_masa = []
+
 with open("dane.txt", 'r') as fi:
     for line in fi:
         if line.split():
-            line = [float(x) for x in line.split()]
-            dane_sz.append(line)
+            data = [float(x) for x in line.split()]
+            dane_masa.append(data[0])
+            dane_fs.append(data[1])
 
-dane = []
-for item in dane_sz:
-    for number in item:
-        dane.append(number)
-
+print("Dane dla fs:", dane_fs)
+print("Dane dla masa:", dane_masa)
