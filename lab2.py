@@ -24,8 +24,8 @@ def create_series(data, h, x01):
 
 def determine_cumulative(abundance):
     cumulative = [abundance[0]]
-    for items in range:
-        cumulative.append(cumulative[items - 1] + abundance[items])
+    for item in abundance:
+        cumulative.append(cumulative[-1] + item)
     return cumulative
 
 
@@ -97,6 +97,7 @@ plt.bar(centers, numbers, width=h, edgecolor='black')
 plt.plot(centers, numbers, color='red')
 plt.show()
 
+skumulowany = skumulowany[:len(centers)]
 plt.figure(figsize=(12, 3))
 plt.bar(centers, skumulowany, width=h, edgecolor='black')
 plt.plot(centers, skumulowany, color='red')
