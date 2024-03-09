@@ -1,0 +1,184 @@
+Index: .idea/aws.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"accountSettings\">\r\n    <option name=\"activeProfile\" value=\"profile:default\" />\r\n    <option name=\"activeRegion\" value=\"us-east-1\" />\r\n    <option name=\"recentlyUsedProfiles\">\r\n      <list>\r\n        <option value=\"profile:default\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"recentlyUsedRegions\">\r\n      <list>\r\n        <option value=\"us-east-1\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/aws.xml b/.idea/aws.xml
+--- a/.idea/aws.xml	
++++ b/.idea/aws.xml	
+@@ -1,13 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="accountSettings">
+-    <option name="activeProfile" value="profile:default" />
+     <option name="activeRegion" value="us-east-1" />
+-    <option name="recentlyUsedProfiles">
+-      <list>
+-        <option value="profile:default" />
+-      </list>
+-    </option>
+     <option name="recentlyUsedRegions">
+       <list>
+         <option value="us-east-1" />
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"InspectionProjectProfileManager\">\r\n  <profile version=\"1.0\">\r\n    <option name=\"myName\" value=\"Project Default\" />\r\n    <inspection_tool class=\"CssUnknownProperty\" enabled=\"true\" level=\"WARNING\" enabled_by_default=\"true\">\r\n      <option name=\"myCustomPropertiesEnabled\" value=\"true\" />\r\n      <option name=\"myIgnoreVendorSpecificProperties\" value=\"false\" />\r\n      <option name=\"myCustomPropertiesList\">\r\n        <value>\r\n          <list size=\"3\">\r\n            <item index=\"0\" class=\"java.lang.String\" itemvalue=\"objectfit\" />\r\n            <item index=\"1\" class=\"java.lang.String\" itemvalue=\"border-opacity\" />\r\n            <item index=\"2\" class=\"java.lang.String\" itemvalue=\"opacity\" />\r\n          </list>\r\n        </value>\r\n      </option>\r\n    </inspection_tool>\r\n    <inspection_tool class=\"Eslint\" enabled=\"true\" level=\"WARNING\" enabled_by_default=\"true\" />\r\n    <inspection_tool class=\"HtmlUnknownAttribute\" enabled=\"true\" level=\"WARNING\" enabled_by_default=\"true\">\r\n      <option name=\"myValues\">\r\n        <value>\r\n          <list size=\"1\">\r\n            <item index=\"0\" class=\"java.lang.String\" itemvalue=\"alt\" />\r\n          </list>\r\n        </value>\r\n      </option>\r\n      <option name=\"myCustomValuesEnabled\" value=\"true\" />\r\n    </inspection_tool>\r\n    <inspection_tool class=\"HtmlUnknownTag\" enabled=\"true\" level=\"WARNING\" enabled_by_default=\"true\">\r\n      <option name=\"myValues\">\r\n        <value>\r\n          <list size=\"8\">\r\n            <item index=\"0\" class=\"java.lang.String\" itemvalue=\"nobr\" />\r\n            <item index=\"1\" class=\"java.lang.String\" itemvalue=\"noembed\" />\r\n            <item index=\"2\" class=\"java.lang.String\" itemvalue=\"comment\" />\r\n            <item index=\"3\" class=\"java.lang.String\" itemvalue=\"noscript\" />\r\n            <item index=\"4\" class=\"java.lang.String\" itemvalue=\"embed\" />\r\n            <item index=\"5\" class=\"java.lang.String\" itemvalue=\"script\" />\r\n            <item index=\"6\" class=\"java.lang.String\" itemvalue=\"listitem\" />\r\n            <item index=\"7\" class=\"java.lang.String\" itemvalue=\"listitemtext\" />\r\n          </list>\r\n        </value>\r\n      </option>\r\n      <option name=\"myCustomValuesEnabled\" value=\"true\" />\r\n    </inspection_tool>\r\n  </profile>\r\n</component>
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+--- a/.idea/inspectionProfiles/Project_Default.xml	
++++ b/.idea/inspectionProfiles/Project_Default.xml	
+@@ -1,46 +1,71 @@
+ <component name="InspectionProjectProfileManager">
+   <profile version="1.0">
+     <option name="myName" value="Project Default" />
+-    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="myCustomPropertiesEnabled" value="true" />
+-      <option name="myIgnoreVendorSpecificProperties" value="false" />
+-      <option name="myCustomPropertiesList">
+-        <value>
+-          <list size="3">
+-            <item index="0" class="java.lang.String" itemvalue="objectfit" />
+-            <item index="1" class="java.lang.String" itemvalue="border-opacity" />
+-            <item index="2" class="java.lang.String" itemvalue="opacity" />
+-          </list>
+-        </value>
+-      </option>
+-    </inspection_tool>
+-    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+       <option name="myValues">
+         <value>
+           <list size="1">
+-            <item index="0" class="java.lang.String" itemvalue="alt" />
++            <item index="0" class="java.lang.String" itemvalue="ckeditor" />
+           </list>
+         </value>
+       </option>
+       <option name="myCustomValuesEnabled" value="true" />
+     </inspection_tool>
+-    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+-      <option name="myValues">
++    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="ignoredPackages">
+         <value>
+-          <list size="8">
+-            <item index="0" class="java.lang.String" itemvalue="nobr" />
+-            <item index="1" class="java.lang.String" itemvalue="noembed" />
+-            <item index="2" class="java.lang.String" itemvalue="comment" />
+-            <item index="3" class="java.lang.String" itemvalue="noscript" />
+-            <item index="4" class="java.lang.String" itemvalue="embed" />
+-            <item index="5" class="java.lang.String" itemvalue="script" />
+-            <item index="6" class="java.lang.String" itemvalue="listitem" />
+-            <item index="7" class="java.lang.String" itemvalue="listitemtext" />
++          <list size="34">
++            <item index="0" class="java.lang.String" itemvalue="pip" />
++            <item index="1" class="java.lang.String" itemvalue="virtualenv" />
++            <item index="2" class="java.lang.String" itemvalue="setuptools" />
++            <item index="3" class="java.lang.String" itemvalue="django-allauth" />
++            <item index="4" class="java.lang.String" itemvalue="PyJWT" />
++            <item index="5" class="java.lang.String" itemvalue="django-ckeditor" />
++            <item index="6" class="java.lang.String" itemvalue="django-recaptcha" />
++            <item index="7" class="java.lang.String" itemvalue="django-richtextfield" />
++            <item index="8" class="java.lang.String" itemvalue="cffi" />
++            <item index="9" class="java.lang.String" itemvalue="defusedxml" />
++            <item index="10" class="java.lang.String" itemvalue="pycparser" />
++            <item index="11" class="java.lang.String" itemvalue="requests" />
++            <item index="12" class="java.lang.String" itemvalue="django-phone-field" />
++            <item index="13" class="java.lang.String" itemvalue="sqlparse" />
++            <item index="14" class="java.lang.String" itemvalue="django-remember-me" />
++            <item index="15" class="java.lang.String" itemvalue="requests-oauthlib" />
++            <item index="16" class="java.lang.String" itemvalue="django-ranged-response" />
++            <item index="17" class="java.lang.String" itemvalue="filelock" />
++            <item index="18" class="java.lang.String" itemvalue="certifi" />
++            <item index="19" class="java.lang.String" itemvalue="oauthlib" />
++            <item index="20" class="java.lang.String" itemvalue="phonenumberslite" />
++            <item index="21" class="java.lang.String" itemvalue="django-phonenumber-field" />
++            <item index="22" class="java.lang.String" itemvalue="urllib3" />
++            <item index="23" class="java.lang.String" itemvalue="wheel" />
++            <item index="24" class="java.lang.String" itemvalue="asgiref" />
++            <item index="25" class="java.lang.String" itemvalue="cryptography" />
++            <item index="26" class="java.lang.String" itemvalue="python3-openid" />
++            <item index="27" class="java.lang.String" itemvalue="platformdirs" />
++            <item index="28" class="java.lang.String" itemvalue="Django" />
++            <item index="29" class="java.lang.String" itemvalue="django-js-asset" />
++            <item index="30" class="java.lang.String" itemvalue="charset-normalizer" />
++            <item index="31" class="java.lang.String" itemvalue="distlib" />
++            <item index="32" class="java.lang.String" itemvalue="idna" />
++            <item index="33" class="java.lang.String" itemvalue="Pillow" />
+           </list>
+         </value>
+       </option>
+-      <option name="myCustomValuesEnabled" value="true" />
++    </inspection_tool>
++    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="ignoredIdentifiers">
++        <list>
++          <option value="blog.models.Blog.objects" />
++          <option value="blog.models.Category.objects" />
++          <option value="blog.models.NewsletterUser.objects" />
++        </list>
++      </option>
++    </inspection_tool>
++    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
++      <option name="processCode" value="true" />
++      <option name="processLiterals" value="true" />
++      <option name="processComments" value="true" />
+     </inspection_tool>
+   </profile>
+ </component>
+\ No newline at end of file
+Index: .idea/Matematyczne-Modelowanie-Systemow.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/venv\" />\r\n    </content>\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.10 (Matematyczne-Modelowanie-Systemow)\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>
+===================================================================
+diff --git a/.idea/Matematyczne-Modelowanie-Systemow.iml b/.idea/Matematyczne-Modelowanie-Systemow.iml
+--- a/.idea/Matematyczne-Modelowanie-Systemow.iml	
++++ b/.idea/Matematyczne-Modelowanie-Systemow.iml	
+@@ -1,10 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+-    <content url="file://$MODULE_DIR$">
+-      <excludeFolder url="file://$MODULE_DIR$/venv" />
+-    </content>
+-    <orderEntry type="jdk" jdkName="Python 3.10 (Matematyczne-Modelowanie-Systemow)" jdkType="Python SDK" />
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.10 (Matematyczne-Modelowanie-Systemow)\" project-jdk-type=\"Python SDK\" />\r\n</project>
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,4 +1,4 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (Matematyczne-Modelowanie-Systemow)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	
++++ b/.idea/vcs.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
