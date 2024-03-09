@@ -24,8 +24,8 @@ def create_series(data, h, x01):
 
 def determine_cumulative(abundance):
     cumulative = [abundance[0]]
-    for item in abundance:
-        cumulative.append(cumulative[-1] + item)
+    for item in range(1, len(abundance)):
+        cumulative.append(cumulative[item - 1] + abundance[item])
     return cumulative
 
 
