@@ -37,7 +37,7 @@ select_data.loc[:, 'F_sr'] = select_data[['F_ram', 'F_łop', 'F_biod', 'F_gol']]
 final_data = select_data[['Masa', 'F_sr']]
 np.savetxt(r'dane.txt', final_data.values, fmt='%1.2f')
 
-dane_fs = []
+dane_fsr = []
 dane_masa = []
 
 with open("dane.txt", 'r') as fi:
@@ -45,28 +45,28 @@ with open("dane.txt", 'r') as fi:
         if line.split():
             data = [float(x) for x in line.split()]
             dane_masa.append(data[0])
-            dane_fs.append(data[1])
+            dane_fsr.append(data[1])
 
-print("Dane dla fs:", dane_fs)
-print("Dane dla masa:", dane_masa)
+print("Dane dla fs:", dane_fsr)
+print("Dane dla masy:", dane_masa)
 
 # dane = dane_masa
-dane = dane_fs
+dane = dane_fsr
 
 minimum = np.min(dane)
 maximum = np.max(dane)
 n = len(dane)
-rozstep = maximum - minimum
-k_rob = round(n ** 0.5, 1)
+range_data = maximum - minimum
+k_temp = round(n ** 0.5, 1)
 print("Minimum:", minimum)
 print("Maximum:", maximum)
 print("N:", n)
-print("Rozstęp:", rozstep)
+print("Rozstęp:", range_data)
 
 k0 = math.sqrt(n)
-h_rob = rozstep / k0
-print("Wyliczone h:", h_rob)
-h0 = h_rob
+h_temp = range_data / k0
+print("Wyliczone h:", h_temp)
+h0 = h_temp
 x01_rob = (minimum - h0 / 2)
 print("Wyliczone x01:", x01_rob)
 
@@ -78,13 +78,13 @@ print("Wyliczone x01:", x01_rob)
 h = 2.18
 x01 = 3.4
 
-przedzialy, liczebnosci, zakresy, srodki = create_series(dane, h, x01)
-skumulowany = determine_cumulative(liczebnosci)
-print("Liczebności: ", liczebnosci)
-print("Zakresy: ", np.round(zakresy, 2))
-print("Skumulowany: ", skumulowany)
+interval, abundance, scope, appropriations = create_series(dane, h, x01)
+cumulative = determine_cumulative(abundance)
+print("Liczebności: ", abundance)
+print("Zakresy: ", np.round(scope, 2))
+print("Skumulowany: ", cumulative)
 
-mean_list = [a * b for a, b in zip(srodki, liczebnosci)]
+mean_list = [a * b for a, b in zip(appropriations, abundance)]
 mean_p = np.mean(dane)
 mean = np.sum(mean_list) / n
 mean_error = abs(mean - mean_p) / mean_p
@@ -92,8 +92,8 @@ print("Średnia z próby: ", mean_p)
 print("Średnia z szeregu: ", mean)
 print("Błąd oszacowania średniej: ", mean_error)
 
-squared_list = [(x - mean) ** 2 for x in srodki]
-product_list = [a * b for a, b in zip(squared_list, liczebnosci)]
+squared_list = [(x - mean) ** 2 for x in appropriations]
+product_list = [a * b for a, b in zip(squared_list, abundance)]
 variance = np.sum(product_list) / n
 std_deviation = variance ** 0.5
 std_deviation_p = np.std(dane)
@@ -102,15 +102,15 @@ print("Odchylenie standardowe z próby: ", std_deviation_p)
 print("Odchylenie standardowe z szeregu: ", std_deviation)
 print("Błąd oszacowania odchylenia: ", std_error)
 
-empirical_distribution = [x / n for x in skumulowany]
+empirical_distribution = [x / n for x in cumulative]
 rob_ind = [0 if x < 0.5 else 1 for x in empirical_distribution]
 m = rob_ind.index(1)
-x0m = przedzialy[m][0]
-nm = liczebnosci[m]
-hm = przedzialy[m][1] - przedzialy[m][0]
-n_sk_1 = skumulowany[m - 1]
+x0m = interval[m][0]
+nm = abundance[m]
+hm = interval[m][1] - interval[m][0]
+n_sk_1 = cumulative[m - 1]
 print("Liczebność próby: ", n)
-print("Numer klasy, dla której po raz pierwszy dystrybuanta empiryczna ma wartośc większą lub równą 1/2: ", m)
+print("Numer klasy, dla której po raz pierwszy dystrybuanta empiryczna ma wartość większą lub równą 1/2: ", m)
 print("Lewy koniec klasy o numerze m: ", x0m)
 print("Liczebność klasy o numerze m: ", nm)
 print("Liczebność skumulowana o numerze m-1: ", n_sk_1)
@@ -120,19 +120,19 @@ median = x0m + (n / 2 - n_sk_1) * hm / nm
 median_error = abs(median_p - median) / median_p
 print("Mediana z próby: ", median_p)
 print("Mediana: ", median)
-print("Błąd oszacowania Mediany: ", median_error)
+print("Błąd oszacowania mediany: ", median_error)
 
-maximum_dominant = np.max(liczebnosci)
-d = liczebnosci.index(maximum_dominant)
-x0d = przedzialy[d][0]
-nd = liczebnosci[d]
-hd = przedzialy[d][1] - przedzialy[d][0]
-nd_minus1 = liczebnosci[d - 1]
-nd_plus1 = liczebnosci[d + 1]
+maximum_dominant = np.max(abundance)
+d = abundance.index(maximum_dominant)
+x0d = interval[d][0]
+nd = abundance[d]
+hd = interval[d][1] - interval[d][0]
+nd_minus1 = abundance[d - 1]
+nd_plus1 = abundance[d + 1]
 print("Numer klasy, która jest najbardziej liczna: ", d)
 print("Lewy koniec klasy o numerze d: ", x0d)
-print("Liczebność klasy o numerze d: ", nd)
 print("Liczebność klasy o numerze d-1: ", nd_minus1)
+print("Liczebność klasy o numerze d: ", nd)
 print("Liczebność klasy o numerze d+1: ", nd_plus1)
 print("Długość klasy o numerze d: ", hd)
 dominant_p = stat.mode(dane)
@@ -173,6 +173,6 @@ outliers_right = len([x for x in dane if (x >= t2_p)])
 print("Liczba wartości odstających po lewej stronie: ", outliers_left)
 print("Liczba wartości odstających po prawej stronie: ", outliers_right)
 
-corr, p_value = pearsonr(dane_masa, dane_fs)
+corr, p_value = pearsonr(dane_masa, dane_fsr)
 print("Współczynnik korelacji Pearsona: ", corr)
 print("P value: ", p_value)
