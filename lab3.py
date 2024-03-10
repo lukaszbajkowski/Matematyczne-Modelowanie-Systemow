@@ -50,7 +50,8 @@ with open("dane.txt", 'r') as fi:
 print("Dane dla fs:", dane_fs)
 print("Dane dla masa:", dane_masa)
 
-dane = dane_masa
+# dane = dane_masa
+dane = dane_fs
 
 minimum = np.min(dane)
 maximum = np.max(dane)
@@ -69,10 +70,13 @@ h0 = h_rob
 x01_rob = (minimum - h0 / 2)
 print("Wyliczone x01:", x01_rob)
 
-# h = 2.18
-# x01 = 3.4
-h = 3.58
-x01 = 24.81
+# Masa
+# h = 3.58
+# x01 = 24.81
+
+# FS
+h = 2.18
+x01 = 3.4
 
 przedzialy, liczebnosci, zakresy, srodki = create_series(dane, h, x01)
 skumulowany = determine_cumulative(liczebnosci)
@@ -90,9 +94,9 @@ print("Błąd oszacowania średniej: ", mean_error)
 
 squared_list = [(x - mean) ** 2 for x in srodki]
 product_list = [a * b for a, b in zip(squared_list, liczebnosci)]
-std_deviation_p = np.std(dane)
 variance = np.sum(product_list) / n
 std_deviation = variance ** 0.5
+std_deviation_p = np.std(dane)
 std_error = abs(std_deviation - std_deviation_p) / std_deviation_p
 print("Odchylenie standardowe z próby: ", std_deviation_p)
 print("Odchylenie standardowe z szeregu: ", std_deviation)
@@ -150,7 +154,7 @@ print("Mieszany współczynnik asymetrii: ", mixed_asymmetry_coefficient)
 
 coefficient_of_variation_p = std_deviation_p / mean_p
 coefficient_of_variation = std_deviation / mean
-print("Współczynnik zmienności: ", coefficient_of_variation_p)
+print("Współczynnik zmienności z próby: ", coefficient_of_variation_p)
 print("Współczynnik zmienności: ", coefficient_of_variation)
 
 t1_l = round(mean_p - std_deviation_p, 2)

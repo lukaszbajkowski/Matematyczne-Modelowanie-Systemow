@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2be87f00-0875-42bb-a839-b87b7319aa18" name="Changes" comment="Dodanie danych oraz stworzenie danych wymaganych w zadaniu 1">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +27,7 @@
         <entry key="$PROJECT_DIR$" value="lab-02" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,5 +89,8 @@
     <MESSAGE value="Dodanie plików początkowych do lab3" />
     <MESSAGE value="Dodanie danych oraz stworzenie danych wymaganych w zadaniu 1" />
     <option name="LAST_COMMIT_MESSAGE" value="Dodanie danych oraz stworzenie danych wymaganych w zadaniu 1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Matematyczne_Modelowanie_Systemow$lab3.coverage" NAME="lab3 Coverage Results" MODIFIED="1710059900638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
