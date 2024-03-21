@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2be87f00-0875-42bb-a839-b87b7319aa18" name="Changes" comment="Zmiany nazw zmiennych">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dane.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dane.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dane_wys_lab2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab03-raport.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3-24.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3_polecenia.docx" beforeDir="false" />
-    </list>
+    <list default="true" id="2be87f00-0875-42bb-a839-b87b7319aa18" name="Changes" comment="Czyszczenie brancha" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +82,7 @@
       <workItem from="1710095734103" duration="1156000" />
       <workItem from="1710104291090" duration="3000" />
       <workItem from="1711042565111" duration="59000" />
+      <workItem from="1711042635585" duration="17000" />
     </task>
     <task id="LOCAL-00001" summary="Dodanie plików początkowych do lab3">
       <created>1709822541747</created>
@@ -114,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1710096288883</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Czyszczenie brancha">
+      <created>1711042644830</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711042644830</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +133,8 @@
     <MESSAGE value="Dodanie plików początkowych do lab3" />
     <MESSAGE value="Dodanie danych oraz stworzenie danych wymaganych w zadaniu 1" />
     <MESSAGE value="Zmiany nazw zmiennych" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zmiany nazw zmiennych" />
+    <MESSAGE value="Czyszczenie brancha" />
+    <option name="LAST_COMMIT_MESSAGE" value="Czyszczenie brancha" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Matematyczne_Modelowanie_Systemow$lab3.coverage" NAME="lab3 Coverage Results" MODIFIED="1710096271145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
