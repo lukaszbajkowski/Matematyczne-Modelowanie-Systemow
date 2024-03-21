@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2be87f00-0875-42bb-a839-b87b7319aa18" name="Changes" comment="Dodanie danych oraz stworzenie danych wymaganych w zadaniu 1">
-      <change beforePath="$PROJECT_DIR$/.idea/aws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+    <list default="true" id="2be87f00-0875-42bb-a839-b87b7319aa18" name="Changes" comment="Zmiany nazw zmiennych">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dane.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dane.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dane_wys_lab2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab03-raport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3-24.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab3_polecenia.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lab-02" />
+        <entry key="$PROJECT_DIR$" value="lab-03" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,19 +43,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\bajko\PycharmProjects\Matematyczne-Modelowanie-Systemow" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Matematyczne-Modelowanie-Systemow" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -59,7 +89,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709822181899</updated>
-      <workItem from="1710095734103" duration="309000" />
+      <workItem from="1710095734103" duration="1156000" />
+      <workItem from="1710104291090" duration="3000" />
+      <workItem from="1711042565111" duration="59000" />
     </task>
     <task id="LOCAL-00001" summary="Dodanie plików początkowych do lab3">
       <created>1709822541747</created>
@@ -75,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709824357116</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Zmiany nazw zmiennych">
+      <created>1710096288883</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710096288883</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,9 +134,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dodanie plików początkowych do lab3" />
     <MESSAGE value="Dodanie danych oraz stworzenie danych wymaganych w zadaniu 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dodanie danych oraz stworzenie danych wymaganych w zadaniu 1" />
+    <MESSAGE value="Zmiany nazw zmiennych" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zmiany nazw zmiennych" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Matematyczne_Modelowanie_Systemow$lab3.coverage" NAME="lab3 Coverage Results" MODIFIED="1710095888221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Matematyczne_Modelowanie_Systemow$lab3.coverage" NAME="lab3 Coverage Results" MODIFIED="1710096271145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
